@@ -4,7 +4,7 @@ import contentImage from '../../img/content-bg.jpg';
 import User from './User/User';
 import MyPosts from './MyPosts/MyPosts';
 
-function Profile() {
+function Profile(props) {
   return (
     <div className='content'>
       <div className="content__image-wrapper">

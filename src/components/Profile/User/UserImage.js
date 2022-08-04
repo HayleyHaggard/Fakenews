@@ -2,7 +2,7 @@ import userImage from '../../../img/user.jpg';
 import './UserImage.scss';
 
 
-function UserImage() {
+function UserImage(props) {
   return (
     <div className="user__image-box">
       <div className="user__image-wrapper">

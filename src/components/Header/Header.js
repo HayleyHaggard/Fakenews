@@ -1,7 +1,7 @@
 import './Header.scss'
 import logo from '../../img/logo.svg';
 
-function Header() {
+function Header(props) {
   return (
     <header className="header">
       <div className="container">

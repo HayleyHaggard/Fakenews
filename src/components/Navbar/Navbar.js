@@ -1,16 +1,17 @@
 import './Navbar.scss'
 
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className='nav'>
 
       <ul className="nav__list">
         <li className="nav__item">
-          <a className="nav__link">Profile</a>
+          <Link to="/profile">Profile</Link>
         </li>
         <li className="nav__item">
-          <a className="nav__link">Messages</a>
+          <Link to="/messages">Messages</Link>
         </li>
       </ul>
     </nav>

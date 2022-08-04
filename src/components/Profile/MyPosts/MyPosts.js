@@ -2,7 +2,7 @@ import './MyPosts.scss';
 import Post from './Post/Post';
 
 
-function MyPosts() {
+function MyPosts(props) {
   return (
     <div className='posts'>
       <div className="posts__new-post">
@@ -11,12 +11,9 @@ function MyPosts() {
         <button>Delete</button>
       </div>
       <div className="posts__list">
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-
+        <Post message='Hello' />
+        <Post message='How are you' />
+        <Post message='I have a good mood today' />
       </div>
 
 

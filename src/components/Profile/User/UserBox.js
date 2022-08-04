@@ -1,6 +1,6 @@
 import './UserBox.scss';
 
-function UserBox() {
+function UserBox(props) {
   return (
     <div className="user__box">
       <p className="user__box-name">Ella Stefan</p>
