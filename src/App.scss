@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.app {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'navbar content';
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 2fr 10fr;
+}

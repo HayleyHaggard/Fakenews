@@ -1,0 +1,25 @@
+.user {
+  &__image-box {
+    margin-bottom: -100px;
+    position: relative;
+    top: -100px;
+    left: 44%;
+  }
+  &__image-wrapper {
+    position: relative;
+    width: 155px;
+    height: 155px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
