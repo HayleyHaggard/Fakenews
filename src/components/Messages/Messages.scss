@@ -1,13 +1,4 @@
 .messages {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  &__people {
-    padding: 20px;
-  }
-  &__people-link.active {
-    color: red;
-  }
-  &__dialogs {
-    padding: 20px;
-  }
 }

@@ -23,7 +23,6 @@ function MyPosts(props) {
         {postsItems}
       </div>
 
-
     </div>
   );
 }

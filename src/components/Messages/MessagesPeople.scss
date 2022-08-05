@@ -1,0 +1,8 @@
+.messages {
+  &__people {
+    padding: 20px;
+  }
+  &__people-link.active {
+    color: red;
+  }
+}
