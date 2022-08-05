@@ -18,8 +18,7 @@ function App() {
         <div className="app__wrapper">
           <Routes>
             <Route path="/profile" element={<Profile />} />
-            <Route path="/messages" element={<Messages />} />
-
+            <Route path="/messages/*" element={<Messages />} />
           </Routes>
 
         </div>

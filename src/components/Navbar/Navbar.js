@@ -1,6 +1,5 @@
 import './Navbar.scss'
-
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
   return (
@@ -8,11 +7,12 @@ function Navbar(props) {
 
       <ul className="nav__list">
         <li className="nav__item">
-          <Link to="/profile">Profile</Link>
+          <NavLink className="nav__link" to="/profile">Profile</NavLink>
         </li>
         <li className="nav__item">
-          <Link to="/messages">Messages</Link>
+          <NavLink className="nav__link" to="/messages">Messages</NavLink>
         </li>
+
       </ul>
     </nav>
   );

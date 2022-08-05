@@ -1,6 +1,6 @@
 import './User.scss'
-import UserImage from './UserImage.js'
-import UserBox from './UserBox.js';
+import userImage from './user.jpg';
+
 
 function User(props) {
   return (
@@ -10,5 +10,26 @@ function User(props) {
     </div>
   );
 }
+
+function UserBox(props) {
+  return (
+    <div className="user__box">
+      <p className="user__box-name">Ella Stefan</p>
+      <p className="user__box-status">Your life is beautiful</p>
+    </div>
+  );
+}
+
+function UserImage(props) {
+  return (
+    <div className="user__image-box">
+      <div className="user__image-wrapper">
+        <img className="user__image" src={userImage} alt="user logo" />
+      </div>
+    </div>
+  );
+}
+
+
 
 export default User;

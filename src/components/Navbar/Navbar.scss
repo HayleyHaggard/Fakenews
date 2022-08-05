@@ -2,4 +2,9 @@
   background-color: #141414;
   height: 100px;
   grid-area: navbar;
+  &__link.active {
+    color: red;
+
+  }
+
 }
