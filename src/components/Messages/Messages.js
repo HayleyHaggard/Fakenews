@@ -6,8 +6,8 @@ import MessagesPeople from './MessagesPeople';
 function Messages(props) {
   return (
     <div className='messages'>
-      <MessagesPeople />
-      <MessagesDialogs />
+      <MessagesPeople messagesPeopleData={props.messagesPeopleData} />
+      <MessagesDialogs messagesDialogsData={props.messagesDialogsData} />
     </div>
   );
 }

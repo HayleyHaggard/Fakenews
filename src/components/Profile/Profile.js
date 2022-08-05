@@ -5,6 +5,8 @@ import User from './User/User';
 import MyPosts from './MyPosts/MyPosts';
 
 function Profile(props) {
+
+
   return (
     <div className='content'>
       <div className="content__image-wrapper">
@@ -12,7 +14,7 @@ function Profile(props) {
       </div>
 
       <User />
-      <MyPosts />
+      <MyPosts postsData={props.postsData} />
 
     </div>
 

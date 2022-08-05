@@ -5,16 +5,9 @@ import { NavLink } from 'react-router-dom';
 
 
 function MessagesPeople(props) {
-  let messagesPeopleData = [
-    { id: 1, name: 'Peta' },
-    { id: 2, name: 'Peter' },
-    { id: 3, name: 'Clara' },
-    { id: 4, name: 'Sam' },
-    { id: 5, name: 'Claus' },
-    { id: 6, name: 'Geoge' }
-  ]
 
-  let messagesPeopleItems = messagesPeopleData.map(item =>
+
+  let messagesPeopleItems = props.messagesPeopleData.map(item =>
     <MessagesPeopleItem name={item.name} id={item.id} />)
 
   return (
