@@ -11,6 +11,7 @@ function Messages(props) {
       <MessagesPeople messagesPeopleData={props.state.messagesPeopleData} />
       <div>
         <MessagesDialogs messagesDialogsData={props.state.messagesDialogsData} />
+        {/* <NewMessage addMessage={props.addMessage} /> */}
         <NewMessage />
       </div>
     </ div>

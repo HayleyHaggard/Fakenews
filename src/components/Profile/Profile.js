@@ -14,7 +14,10 @@ function Profile(props) {
       </div>
 
       <User />
-      <MyPosts postsData={props.state.postsData} />
+      <MyPosts postsData={props.state.postsData}
+        newPostText={props.state.newPostText}
+        addPost={props.addPost}
+        apdateNewPostText={props.apdateNewPostText} />
 
     </div>
 
