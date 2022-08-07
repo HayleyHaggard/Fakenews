@@ -12,7 +12,7 @@ function Messages(props) {
       <div>
         <MessagesDialogs messagesDialogsData={props.state.messagesDialogsData} />
         {/* <NewMessage addMessage={props.addMessage} /> */}
-        <NewMessage />
+        <NewMessage store={props.store} />
       </div>
     </ div>
   );

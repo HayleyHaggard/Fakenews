@@ -16,9 +16,7 @@ function Profile(props) {
       <User />
       <MyPosts postsData={props.state.postsData}
         newPostText={props.state.newPostText}
-        addPost={props.addPost}
-        apdateNewPostText={props.apdateNewPostText} />
-
+        dispatch={props.dispatch} />
     </div>
 
   );
