@@ -16,7 +16,7 @@ function App(props) {
       <div className="app__wrapper">
         <Routes>
           <Route path="/profile" element={<Profile store={props.store} />} />
-          <Route path="/messages/*" element={<Messages state={props.state.messagesPage} store={props.store} />} />
+          <Route path="/messages/*" element={<Messages store={props.store} />} />
         </Routes>
 
       </div>
