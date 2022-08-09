@@ -3,6 +3,7 @@ import contentImage from '../../img/content-bg.jpg';
 
 import User from './User/User';
 import MyPosts from './MyPosts/MyPosts';
+import MyPostsContainer from './MyPosts/MyPostsContainer';
 
 function Profile(props) {
 
@@ -14,9 +15,7 @@ function Profile(props) {
       </div>
 
       <User />
-      <MyPosts postsData={props.state.postsData}
-        newPostText={props.state.newPostText}
-        dispatch={props.dispatch} />
+      <MyPostsContainer store={props.store} />
     </div>
 
   );

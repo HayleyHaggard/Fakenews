@@ -22,8 +22,7 @@ function App(props) {
       <div className="app__wrapper">
         <Routes>
           <Route path="/profile" element={<Profile
-            state={props.state.profilePage}
-            dispatch={props.dispatch} />} />
+            store={props.store} />} />
           <Route path="/messages/*" element={<Messages
             state={props.state.messagesPage} store={props.store} />} />
         </Routes>

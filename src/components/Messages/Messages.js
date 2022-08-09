@@ -1,7 +1,7 @@
 import './Messages.scss';
 import MessagesDialogs from './MessagesDialogs';
 import MessagesPeople from './MessagesPeople';
-import NewMessage from './MessageTextarea';
+import NewMessageContainer from './MessageTextareaContainer';
 
 
 function Messages(props) {
@@ -11,8 +11,7 @@ function Messages(props) {
       <MessagesPeople messagesPeopleData={props.state.messagesPeopleData} />
       <div>
         <MessagesDialogs messagesDialogsData={props.state.messagesDialogsData} />
-        {/* <NewMessage addMessage={props.addMessage} /> */}
-        <NewMessage store={props.store} />
+        <NewMessageContainer store={props.store} />
       </div>
     </ div>
   );

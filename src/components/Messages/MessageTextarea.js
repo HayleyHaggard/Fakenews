@@ -1,23 +1,21 @@
 import React from 'react';
-import { apdateNewMessageCreator, sendMessageCreator } from '../../redux/messages-reducer';
 import './MessageTextarea.scss'
 
 function NewMessage(props) {
 
-  let state = props.store.getState().messagesPage;
+  let state = props.messagesPage;
 
   let newMessageBody = state.newMessageText;
 
 
 
   let onNewMessageChange = (e) => {
-    let body = e.target.value;
-    props.store.dispatch(apdateNewMessageCreator(body));
+    let text = e.target.value;
+    props.apdateNewMessage(text);
   };
 
   let onSendMessageClick = () => {
-
-    props.store.dispatch(sendMessageCreator());
+    props.sendMessage()
   }
 
   return (
