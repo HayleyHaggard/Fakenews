@@ -6,6 +6,7 @@ import NewMessageContainer from './MessageTextareaContainer';
 
 function Messages(props) {
 
+
   return (
     < div className='messages' >
       <MessagesPeople messagesPeopleData={props.state.messagesPeopleData} />

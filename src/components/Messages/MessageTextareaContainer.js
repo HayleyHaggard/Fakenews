@@ -1,26 +1,22 @@
-import React from 'react';
 import NewMessage from './MessageTextarea';
 import { apdateNewMessageCreator, sendMessageCreator } from '../../redux/messages-reducer';
+import { connect } from 'react-redux'
 
 
-function NewMessageContainer(props) {
-
-  let state = props.store.getState().messagesPage;
-
-  let onNewMessageChange = (body) => {
-    props.store.dispatch(apdateNewMessageCreator(body));
-  };
-
-  let onSendMessageClick = () => {
-    props.store.dispatch(sendMessageCreator());
+const mapStateToProps = (state) => {
+  return {
+    messagesPage: state.messagesPage,
   }
+};
 
-  return (
-    <NewMessage
-      apdateNewMessage={onNewMessageChange}
-      sendMessage={onSendMessageClick}
-      messagesPage={state} />
-  );
-}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    apdateNewMessage: (body) => { dispatch(apdateNewMessageCreator(body)); },
+    sendMessage: () => { dispatch(sendMessageCreator()); }
+  }
+};
+
+const NewMessageContainer = connect(mapStateToProps, mapDispatchToProps)(NewMessage);
+
 
 export default NewMessageContainer;
