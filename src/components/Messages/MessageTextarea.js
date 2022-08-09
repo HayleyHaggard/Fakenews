@@ -1,5 +1,5 @@
 import React from 'react';
-import { apdateNewMessageCreator, sendMessageCreator } from '../../redux/state';
+import { apdateNewMessageCreator, sendMessageCreator } from '../../redux/messages-reducer';
 import './MessageTextarea.scss'
 
 function NewMessage(props) {
@@ -16,7 +16,6 @@ function NewMessage(props) {
   };
 
   let onSendMessageClick = () => {
-    debugger;
 
     props.store.dispatch(sendMessageCreator());
   }
