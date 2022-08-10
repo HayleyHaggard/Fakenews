@@ -3,7 +3,7 @@ const SEND_MESSAGE = 'SEND-MESSAGE';
 
 
 let initialState = {
-  messagesPeopleData: [
+  peopleData: [
     { id: 1, name: 'Peta' },
     { id: 2, name: 'Peter' },
     { id: 3, name: 'Clara' },
@@ -12,7 +12,7 @@ let initialState = {
     { id: 6, name: 'Geoge' }
   ],
 
-  messagesDialogsData: [
+  messagesData: [
     { id: 1, message: 'Hi' },
     { id: 2, message: 'Hello' },
     { id: 3, message: 'by' },
