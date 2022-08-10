@@ -1,4 +1,4 @@
-import { sendMessageCreator, apdateNewMessageCreator } from "../../redux/messages-reducer";
+import { sendMessageCreator, updateNewMessageCreator } from "../../redux/messages-reducer";
 import Messages from "./Messages";
 import { connect } from "react-redux";
 
@@ -13,7 +13,7 @@ let mapDispatchToProps = (dispatch) => {
       dispatch(sendMessageCreator());
     },
     updateNewMessageBody: (body) => {
-      dispatch(apdateNewMessageCreator(body));
+      dispatch(updateNewMessageCreator(body));
     }
   }
 }
