@@ -3,4 +3,11 @@
     width: 100px;
     height: 100px;
   }
+  &__page {
+    font-weight: normal;
+  }
+  &__page.active {
+    font-weight: bold;
+    color: red;
+  }
 }
