@@ -4,22 +4,23 @@ import { Routes, Route } from "react-router-dom";
 import './App.scss';
 import './_reset.scss';
 
-import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import MessagesContainer from './components/Messages/MessagesContainer';
 import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
+import HeaderContainer from './components/Header/HeaderContainer';
 
 
 function App(props) {
 
   return (
     <div className="app">
-      <Header />
+      <HeaderContainer />
       <Navbar />
       <div className="app__wrapper">
         <Routes>
-          <Route path="/profile/*" element={<ProfileContainer />} />
+          <Route path="/profile/:userId" element={<ProfileContainer />} />
+          <Route path="/profile" element={<ProfileContainer />} />
           <Route path="/messages/*" element={<MessagesContainer />} />
           <Route path="/users" element={<UsersContainer />} />
 

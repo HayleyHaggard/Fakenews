@@ -1,5 +1,6 @@
 import './Header.scss'
 import logo from '../../img/logo.svg';
+import { NavLink } from 'react-router-dom';
 
 function Header(props) {
   return (
@@ -10,6 +11,11 @@ function Header(props) {
             <img className="header__image" src={logo} alt="logo"></img>
           </a>
           <div>search</div>
+          <div>
+            {props.isAuth ? props.login
+              : <NavLink to='/login'> Login  </NavLink>
+            }
+          </div>
         </div>
       </div>
 

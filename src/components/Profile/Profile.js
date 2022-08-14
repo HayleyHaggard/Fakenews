@@ -5,7 +5,6 @@ import User from './User/User';
 import MyPostsContainer from './MyPosts/MyPostsContainer';
 
 function Profile(props) {
-  // debugger
 
 
   return (
