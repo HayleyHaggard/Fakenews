@@ -6,9 +6,9 @@ import './_reset.scss';
 
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
 import MessagesContainer from './components/Messages/MessagesContainer';
 import UsersContainer from './components/Users/UsersContainer';
+import ProfileContainer from './components/Profile/ProfileContainer';
 
 
 function App(props) {
@@ -19,7 +19,7 @@ function App(props) {
       <Navbar />
       <div className="app__wrapper">
         <Routes>
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile/*" element={<ProfileContainer />} />
           <Route path="/messages/*" element={<MessagesContainer />} />
           <Route path="/users" element={<UsersContainer />} />
 

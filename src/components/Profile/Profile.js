@@ -5,6 +5,7 @@ import User from './User/User';
 import MyPostsContainer from './MyPosts/MyPostsContainer';
 
 function Profile(props) {
+  // debugger
 
 
   return (
@@ -13,9 +14,8 @@ function Profile(props) {
         <img className="content__image" src={contentImage} alt="background" />
       </div>
 
-      <User />
+      <User profile={props.profile} />
       <MyPostsContainer store={props.store} />
-      {/* <MyPostsContainer /> */}
     </div>
 
   );
