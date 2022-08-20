@@ -3,6 +3,7 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import './Messages.scss';
 
+
 const Messages = (props) => {
 
   let state = props.messagesPage;
