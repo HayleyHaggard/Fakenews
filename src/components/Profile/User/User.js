@@ -1,4 +1,5 @@
 import Preloader from '../../common/Preloader/Preloader';
+import ProfileStatus from './ProfileStatus';
 import './User.scss'
 // import userImage from './user.jpg';
 
@@ -15,20 +16,10 @@ function User(props) {
           <img className="user__image" src={props.profile.photos.large} alt="user logo" />
         </div>
       </div>
-      <UserBox />
+      <ProfileStatus status={'Hello'} />
     </div>
   );
 }
-
-function UserBox(props) {
-  return (
-    <div className="user__box">
-      <p className="user__box-name">Ella Stefan</p>
-      <p className="user__box-status">Your life is beautiful</p>
-    </div>
-  );
-}
-
 
 
 export default User;
