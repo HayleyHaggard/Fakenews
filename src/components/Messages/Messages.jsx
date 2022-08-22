@@ -23,14 +23,14 @@ const Messages = (props) => {
       </div>
       <div >
         <div>{messagesElements}</div>
-        <AddMassageForm sendMessage={props.sendMessage} />
+        <AddMessageForm sendMessage={props.sendMessage} />
       </div>
     </div>
   )
 }
 
 
-const AddMassageForm = (props) => {
+const AddMessageForm = (props) => {
 
   let addNewMessage = (values) => {
     props.sendMessage(values);
