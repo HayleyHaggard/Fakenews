@@ -13,7 +13,7 @@ function Profile(props) {
         <img className="content__image" src={contentImage} alt="background" />
       </div>
 
-      <User profile={props.profile} />
+      <User profile={props.profile} status={props.status} updateStatus={props.updateStatus} />
       <MyPostsContainer store={props.store} />
     </div>
 

@@ -24,6 +24,7 @@ function MyPosts(props) {
         <button onClick={onAddPost}>Add</button>
         <button>Delete</button>
       </div>
+
       <div className="posts__list">
         {postsItems}
       </div>
@@ -31,6 +32,7 @@ function MyPosts(props) {
     </div>
   );
 }
+
 
 
 export default MyPosts;
