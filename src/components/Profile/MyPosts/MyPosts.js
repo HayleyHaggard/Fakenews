@@ -35,7 +35,6 @@ function MyPosts(props) {
   );
 }
 
-
 const AddPostForm = (props) => {
 
   let addNewPost = (values) => {
